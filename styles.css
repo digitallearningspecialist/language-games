@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: mediumpurple;
+    background-position: absolute;
+    font-size: 100%;
+}
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    font-family: "DynaPuff";
+    text-align: center;
+    color: mediumpurple;
+}
+
+#nacslogowhite {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+#gamename {
+    text-align: center;
+    font-size: 6vw;
+    font-family: "DynaPuff";
+    font-weight: bold;
+    text-shadow: 0 0 0.8vw black;
+    color: white;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 12vw;
+    font-family: "DynaPuff";
+    font-weight: bold;
+    text-shadow: 0 0 0.8vw black;
+    color: white;
+    margin-top: 18vw;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    width: 80vw;
+    padding: 7vw 9vw;
+    margin-left: 1vw;
+    background-color: white;
+    position: static;
+    transform: translate(0vw, 1vw);
+    left: 50%;
+    top: 50%;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2.8vw rgba(86, 66, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
+
+.game-container {
+    position: static;
+    width: 80vw;
+    display: grid;
+    transform: translate(-9vw, 0vw);
+    gap: 3.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.card-before,
+.card-after {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    width: 22vw;
+    height: 22vw;
+    display: flex;
+    border: 0.3vw solid #000000;
+    transition: transform 0.7s ease-out;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.cardtext {
+    font-size: 2.1vw;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1vw;
+}
+
+image {
+    width: auto;
+    height: auto;
+}
+
+.card-before {
+    background-color: mediumpurple;
+}
+
+.card-after {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+.controls-container {
+    position: absolute;
+    display: hide;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 112%;
+    background-color: orange;
+    transform: translate(0vw, 2vw);
+}
+
+button {
+    border-radius: 1.5vw;
+    cursor: pointer;
+}
+
+.stats-container {
+    box-sizing: content-box;
+    width: 94vw;
+    padding: 2vw 2vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    margin-left: 1vw;
+    gap: 2vw;
+    background-color: white;
+    font-family: "Dynapuff";
+    color: mediumpurple;
+    position: static;
+    font-size: 6vw;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 2.8vw rgba(86, 66, 0, 0.2);
+}
+
+#stop {
+    font-size: 6vw;
+    background-color: mediumpurple;
+    border: 0.3vw solid #000000;
+    color: white;
+    font-family: "DynaPuff";
+    font-weight: 600;
+    text-shadow: 0 0 0.5vw black;
+}
+
+#play {
+    font-size: 6vw;
+    padding: 4vw 2.5vw;
+    background-color: mediumpurple;
+    border: 0.3vw solid #000000;
+    color: white;
+    font-family: "DynaPuff";
+    font-weight: 600;
+    text-shadow: 0 0 0.5vw black;
+}
+
+#start {
+    font-size: 6vw;
+    padding: 4vw 2.5vw;
+    background-color: mediumpurple;
+    border: 0.3vw solid #000000;
+    color: white;
+    font-family: "DynaPuff";
+    font-weight: 600;
+    text-shadow: 0 0 0.5vw black;
+}
+
+#moves-count {
+    font-size: 6vw;
+    text-align: center;
+    font-family: "DynaPuff";
+    padding-left: 0vw;
+    padding-right: 20vw;
+}
+
+#time {
+    font-size: 6vw;
+    text-align: center;
+    font-family: "DynaPuff";
+}
+
+#result {
+    text-align: center;
+    color: mediumpurple;
+    background-color: transparent;
+    font-size: 16vw;
+    font-family: "DynaPuff";
+    font-weight: 800;
+    -webkit-text-stroke: 0.5vw black;
+    transform: translate(0, -150%);
+}
+
+.resulttext {
+    font-size: 16vw;
+    font-family: "DynaPuff";
+    font-weight: 900;
+}
