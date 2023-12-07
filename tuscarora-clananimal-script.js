@@ -14,15 +14,15 @@ let secondCard = false;
 
 // Items array
 const items = [
-    {name: "bear", clan: "uhčíhrȩˀ", image: "bear.png", audio: "makwa.mp3"},
-    {name: "turtle", clan: "ráˀkwihs", image: "turtle.png", audio: "mikinaak.mp3"},
-    {name: "wolf", clan: "ɵkwarì:nȩ", image: "wolf.png", audio: "maiingan.mp3"},
-    {name: "deer", clan: "á∙khweh", image: "deer.png", audio: "waawaashkeshi.mp3"},
-    {name: "hawk", clan: "nekanęˀɵnáhkhwaˀ", image: "hawk.png", audio: "memeskniniisi.mp3"},
-    {name: "snipe", clan: "tawístawis", image: "sandpiper.png", audio: "benaishii.mp3"},
-    {name: "heron", clan: "káheh", image: "heron.png", audio: "aajiijak.mp3"},
-    {name: "beaver", clan: "čúˀnakȩˀ", image: "beaver.png", audio: "amik.mp3"},
-    {name: "eel", clan: "kę∙‘nęh", image: "eel.png", audio: "giigoonh.mp3"},
+    {name: "bear", clan: "uhčíhrȩˀ", image: "bear.png", audio: "Bear - Uhcihre.mp3"},
+    {name: "turtle", clan: "ráˀkwihs", image: "turtle.png", audio: "Turtle - Ra'kwihs.mp3"},
+    {name: "wolf", clan: "ɵkwarì:nȩ", image: "wolf.png", audio: "Wolf - Thkwarine.mp3"},
+    {name: "deer", clan: "á∙khweh", image: "deer.png", audio: "Deer - Akhweh.mp3"},
+    {name: "hawk", clan: "nekanęˀɵnáhkhwaˀ", image: "hawk.png", audio: "Hawk - Nekanethnakwa.mp3"},
+    {name: "snipe", clan: "tawístawis", image: "sandpiper.png", audio: "Snipe - Tawistawis.mp3"},
+    {name: "heron", clan: "káheh", image: "heron.png", audio: "Heron - Kaheh.mp3"},
+    {name: "beaver", clan: "čúˀnakȩˀ", image: "beaver.png", audio: "Beaver - Cu'nake'.mp3"},
+    {name: "eel", clan: "kę∙‘nęh", image: "eel.png", audio: "Eel - Ke'neh.mp3"},
 ];
 
 // Items array
