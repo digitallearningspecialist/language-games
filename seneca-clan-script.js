@@ -14,22 +14,20 @@ let secondCard = false;
 
 // Items array
 const items = [
-    {name: "bear", clan: "ohgwaih", image: "bear.png", audio: "makwa.mp3"},
-    {name: "turtle", clan: "haˀno:wah", image: "turtle.png", audio: "mikinaak.mp3"},
-    {name: "wolf", clan: "othahyǫ:níh", image: "wolf.png", audio: "maiingan.mp3"},
-    {name: "deer", clan: "ǫsȩgnǫdoˀ", image: "deer.png", audio: "Deer - Osegnodo.mp3"},
-    {name: "hawk", clan: "hodiswȩgai:yóh", image: "hawk.png", audio: "Hawk - Hodiswegaiyoh.mp3"},
-    {name: "sandpiper", clan: "odiˀnehsiyóh", image: "sandpiper.png", audio: "Sandpiper - Odinehsiyoh.mp3"},
-    {name: "heron", clan: "degaȩyagahä:’́", image: "heron.png", audio: "Heron - Degaeyagaha.mp3"},
-    {name: "beaver", clan: "odnaˀga:yaˀgih", image: "beaver.png", audio: "amik.mp3"},
-    {name: "eel", clan: "ogǫde:naˀ", image: "eel.png", audio: "Eel - Ogodena.mp3"},
+    {name: "I am Bear Clan", clan: "Agedzöni'ga:'", image: "bear.png", audio: "Bear - SenecaClan.mp3"},
+    {name: "I am Deer Clan", clan: "Agé:nyögwaiyo'", image: "deer.png", audio: "Deer - SenecaClan.mp3"},
+    {name: "I am Wolf CLan", clan: "Agáta:yö:nih", image: "wolf.png", audio: "Wolf - SenecaClan.mp3"},
+    {name: "I am Turtle Clan", clan: "Genyáhdë:h", image: "turtle.png", audio: "Turtle - SenecaClan.mp3"},
+    {name: "I am Beaver Clan", clan: "Agégë'ge:ga:'", image: "beaver.png", audio: "Beaver - SenecaClan.mp3"},
+    {name: "I am Heron Clan", clan: "Agadáë'ö:ga:'", image: "heron.png", audio: "Heron - SenecaClan.mp3"},
+    {name: "I am Snipe Clan", clan: "Agé'nehsi:yo'", image: "sandpiper.png", audio: "Snipe - SenecaClan.mp3"},
+    {name: "I am Hawk Clan", clan: "Agéswë'gaiyo'", image: "hawk.png", audio: "Hawk - SenecaClan.mp3"},
 ];
 
 // Items array
 // const wampum = [
     // {name: "wampum", image: "wampumsmaller.png"},
 // ];
-
 
 // Initial Time
 let seconds = 0,
@@ -53,7 +51,6 @@ const timeGenerator = () => {
 // Initial Moves & Win Count
 let movesCount = 0,
     winCount = 0;
-    
 
 // Calculate moves
 const movesCounter = () => {
@@ -92,16 +89,16 @@ const matrixGenerator = (cardValues, size = 4) => {
             data-card-value is a custom attribute which stores the names of the cards to match later
         */
         gameContainer.innerHTML += `
-        <div class="card-container container-fluid" data-card-value="${cardValues[i].name}" data-audio-value="${cardValues[i].audio}">
-            <div class="card-before container-fluid"></div>
-            <div class="card card-after text-center container-fluid">
-                <div class"card container-fluid">
-                    <p class="card-title cardtext">${cardValues[i].clan}</p>
-                    <img src="${cardValues[i].image}" class="container-fluid">
-                    <p class="card-title cardtext">${cardValues[i].name}</p>
+            <div class="card-container container-fluid" data-card-value="${cardValues[i].name}" data-audio-value="${cardValues[i].audio}">
+                <div class="card-before container-fluid"></div>
+                <div class="card card-after text-center container-fluid">
+                    <div class"card container-fluid">
+                        <p class="card-title cardtext">${cardValues[i].clan}</p>
+                        <img src="${cardValues[i].image}" class="container-fluid">
+                        <p class="card-title cardtext">${cardValues[i].name}</p>
+                    </div>
                 </div>
-            </div>
-        </div>`;
+            </div>`;
     }
 
     // Grid
@@ -161,13 +158,14 @@ const matrixGenerator = (cardValues, size = 4) => {
                         let delay = setTimeout(() => {
                             tempFirst.classList.remove("flipped");
                             tempSecond.classList.remove("flipped");
-                        }, 1800);
+                        }, 1400);
                     }
                 }
             }
         });
     });
 };
+
 
 // Start game
 startButton.addEventListener("click", () => {
@@ -176,24 +174,27 @@ startButton.addEventListener("click", () => {
     minutes = 0;
     // Controls and button visibility
     gameWrap.classList.remove("hide");
-    // controls.classList.add("hide");
-    // stopButton.classList.remove("hide");
-    // startButton.classList.add("hide");
+    //stopButton.classList.remove("hide");
+    //playButton.classList.remove("hide");
+    //startButton.classList.add("hide");
     // Start timer
     interval = setInterval(timeGenerator, 1000);
     // initial moves
-    moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+    moves.innerHTML = `<span>Moves: </span> ${movesCount}`;
     initializer();
 });
 
 // Stop game
 stopButton.addEventListener("click", (stopGame = () => {
-    // controls.classList.remove("hide");
-    // stopButton.classList.add("hide");
+    //controls.classList.remove("hide");
+    // stopButton.classList.add("hide"); 
+    // playButton.classList.remove("hide");
     // startButton.classList.remove("hide");
     clearInterval(interval);
     })
 );
+
+
 
 // Initialize values and function calls
 const initializer = () => {

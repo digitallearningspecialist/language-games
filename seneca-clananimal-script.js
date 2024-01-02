@@ -14,14 +14,14 @@ let secondCard = false;
 
 // Items array
 const items = [
-    {name: "bear", clan: "nyagwai'", image: "bear.png", audio: "nyagai.mp3"},
-    {name: "deer", clan: "neogë'", image: "deer.png", audio: "neoge.mp3"},
-    {name: "wolf", clan: "otá:yö:nih", image: "wolf.png", audio: "otayonih.mp3"},
-    {name: "turtle", clan: "ha'no:wa:h", image: "turtle.png", audio: "hanowah.mp3"},
-    {name: "beaver", clan: "nöganya'göh", image: "beaver.png", audio: "noganyagoh.mp3"},
-    {name: "heron", clan: "jóäshä'", image: "heron.png", audio: "joasha.mp3"},
-    {name: "snipe", clan: "nö'dzahgwë'", image: "sandpiper.png", audio: "benaishii.mp3"},
-    {name: "hawk", clan: "gaji'da:s", image: "hawk.png", audio: "gajidas.mp3"},
+    {name: "bear", clan: "nyagwai'", image: "bear.png", audio: "Bear - Nyagwai.mp3"},
+    {name: "deer", clan: "neogë'", image: "deer.png", audio: "Deer - Neoge.mp3"},
+    {name: "wolf", clan: "otá:yö:nih", image: "wolf.png", audio: "Wolf - Otayonih.mp3"},
+    {name: "turtle", clan: "ha'no:wa:h", image: "turtle.png", audio: "Turtle - Hanowah.mp3"},
+    {name: "beaver", clan: "nöganya'göh", image: "beaver.png", audio: "Beaver - Noganyagoh.mp3"},
+    {name: "heron", clan: "jóäshä'", image: "heron.png", audio: "Heron - Joasha.mp3"},
+    {name: "snipe", clan: "nö'dzahgwë'", image: "sandpiper.png", audio: "Snipe - Nodzahgwe.mp3"},
+    {name: "hawk", clan: "gaji'da:s", image: "hawk.png", audio: "Hawk - Gajidas.mp3"},
     {name: "eel", clan: "goda:nöh", image: "eel.png", audio: "giigoonh.mp3"},
 ];
 
@@ -159,7 +159,7 @@ const matrixGenerator = (cardValues, size = 4) => {
                         let delay = setTimeout(() => {
                             tempFirst.classList.remove("flipped");
                             tempSecond.classList.remove("flipped");
-                        }, 1800);
+                        }, 1400);
                     }
                 }
             }

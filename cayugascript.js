@@ -20,7 +20,7 @@ const items = [
     {name: "wolf", clan: "otahyǫ:ni:", image: "wolf.png", audio: "maiingan.mp3"},
     {name: "deer", clan: "dewáhǫhde:s", image: "deer.png", audio: "waawaashkeshi.mp3"},
     {name: "hawk", clan: "oswȩ'gai:yo'", image: "hawk.png", audio: "memeskniniisi.mp3"},
-    {name: "snipe", clan: "duwihsduwi:,oˀnehsí:yoˀ", image: "sandpiper.png", audio: "benaishii.mp3"},
+    {name: "snipe", clan: "du:wisdu:wi:ˀ", image: "sandpiper.png", audio: "Snipe - Duwisduwi.mp3"},
     {name: "heron", clan: "sganyaˀdí:ga:ˀ", image: "heron.png", audio: "aajiijak.mp3"},
     {name: "beaver", clan: "naganyá'gǫ'", image: "beaver.png", audio: "amik.mp3"},
     {name: "eel", clan: "gǫ:deh", image: "eel.png", audio: "giigoonh.mp3"},
