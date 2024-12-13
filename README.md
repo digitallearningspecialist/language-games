@@ -1,2 +1,2 @@
 # language-games
-https://mikeermatinger.github.io/language-games/
+https://digitallearningspecialist.github.io/language-games/
